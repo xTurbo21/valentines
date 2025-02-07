@@ -1,0 +1,224 @@
+.valentines {
+  background: #000000;
+  height: 200vh;
+  width: 98vw;
+  position: relative;
+}
+
+.background {
+  width: 60vw; /* Keep as vw for responsiveness */
+  height: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(270deg);
+  object-fit: cover;
+  filter: blur(25px);
+  z-index: 0;
+}
+
+.base {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px; /* Changed from 2vw to 20px */
+  width: 80vw; /* Changed from 80% to 80vw */
+  height: 30vh; /* Already in vh */
+  position: relative;
+  left: 10vw; /* Changed from 10% to 10vw */
+  top: 10vh; /* Already in vh */
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.47); /* Changed from 0.5vw to 5px */
+  filter: blur(4px);
+  backdrop-filter: blur(30px);
+}
+
+.heading {
+  padding: 10px; /* Changed from 1vw to 10px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw; /* Changed from 90% to 90vw */
+  position: relative;
+  left: 5vw; /* Changed from 5% to 5vw */
+  top: 5vh; /* Already in vh */
+}
+
+.valentines-day-countdown {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  font-size: 50px; /* Changed from 5vw to 50px */
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.time-until-next-present {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 4, 1) 0%,
+    rgba(184, 31, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  top: 28vh;
+  transform: translateX(-50%);
+  width: 80vw;
+}
+
+.timer {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  top: 35vh;
+  transform: translateX(-50%);
+  width: 80vw;
+}
+
+.day-name {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  top: 40vh;
+  transform: translateX(-50%);
+  width: 80vw;
+}
+
+.gifts-container {
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gift {
+  position: relative;
+  width: 60vw;
+  height: 40vh;
+  border-radius: 20px;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.gift img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.gift-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.gift .revealed-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.gift .revealed-image {
+  width: 15vw;
+  height: auto;
+  margin: -70px auto 10px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  z-index: 1;
+}
+
+.gift .revealed-text {
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+  position: absolute; /* Position the text independently */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -30%); /* Adjust for exact center */
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  backdrop-filter: blur(1px);
+  z-index: 0; /* Ensure text stays behind the image */
+}
+
+/*
+.gift .revealed-content {
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+  width: 60vw;
+  height: 40vh;
+  text-align: center;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gift .revealed-image {
+  width: 10vw;
+  height: auto;
+  margin: -60px auto 10px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.gift .revealed-text {
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  font-size: 20px;
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+  transform: translateY(-20%);
+}*/
+
+.rectangle-1 {
+  border-radius: 20px;
+  width: 60vw;
+  height: 40vh;
+  position: absolute;
+  left: 20vw;
+  top: 60vh;
+  object-fit: cover;
+}
