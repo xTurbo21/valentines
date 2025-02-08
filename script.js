@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       day: 4,
       image: "promise.png",
-      text: "🙌🏻 It's promise day! I know we both broke a lot of promises.. but one thing I can promise is that you will always, and I mean ALWAYS have a very special place in my heart. I love you so much My Love 💖 Happy Promise Day! 💖",
+      text: "🙌🏻 It's promise day! I know we both broke a lot of promises.. but one thing I can promise is that you will always, and I mean ALWAYS have a very special place in my heart. It's a very special day since today marks the first anniversary of our relationship. I stil can't believe it's been a whole year. Got more to say but won't fit here so, I love you. Happy Anniversary My Love 💖",
     },
     {
       day: 5,
